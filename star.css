@@ -1,0 +1,175 @@
+/* now add css code */
+*{
+    background: rgb(0, 0, 0);
+}
+
+
+img{
+
+    justify-content: center;
+    display: flex;
+    border:  solid;
+
+}
+
+ h1{
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-family: 'Times New Roman', 'sans-serif';
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 255, 255);
+    border: 10px red;
+    
+}
+
+.input#name{
+    background-color: white;
+    
+
+}
+
+p{
+    font-size: 35px;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+
+
+
+
+.rating{
+    margin: 0px auto;
+    width: 0px auto;
+}
+.rating >*{
+    float: right;
+}
+.rating label{
+    height: 40px;
+    width: 20%;
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+.rating label::after{
+    transition: all 0.4s ease-out;
+    -webkit-font-smoothing:antialiased;
+    position: absolute;
+    content: "★";
+    color: white;
+    top: 10%;
+    left: 10%;
+    right: 20%;
+    width: 60;
+    height: 60;
+    text-align: left;
+    font-size: 60px;
+    -webkit-animation: 1s pulse ease;
+    animation: 1s pulse ease;
+}
+/*add hover effect*/
+.rating label:hover::after{
+    color: orange;
+    text-shadow: 0 0 15px rgb(235, 137, 26);
+
+}
+.rating input{
+    display: none;
+}
+.rating input:checked + label::after,
+.rating input:checked ~ label::after{
+    content: "★";
+    color: yellow;
+    text-shadow: 0 0 20px #f9bf3b ;
+
+
+}
+
+/*===FEEDBACK===*/
+
+main{
+    margin: 0 auto 0px auto;
+    height: 10px;
+    width: 1100px;
+    background-color: #fff;
+    box-shadow: 0px 3px 10px rgba(0,0,0 ,5);
+
+}
+ #feedback-1,
+ #feedback-2,
+ #feedback-3{
+     padding: 0 45px 12px 45px;
+     width: 475px;
+     display: flex;
+
+ }
+ input,
+ textarea,
+ button{
+     outline: none;
+
+ }
+
+/*Feedback-1*/
+#feedback-1{
+    justify-content: space-between;
+}
+input{
+    width: 200px;
+    height: 35px;
+    padding: 0 10px;
+    font-size: 17px;
+}
+
+input:focus::placeholder{
+    color: white;
+}
+
+/*Feedback-2*/
+
+textarea{
+    width: 100%;
+    height: 250px;
+    resize: none;
+    padding: 5px 10px;
+    font-size: 17px;
+    line-height: 20px;
+    background: rgb(255, 255, 255);
+    font-family: fantasy;
+
+
+}
+
+textarea:focus::placeholder{
+    color: #fff;
+
+}
+
+/* Feedback-3 */
+
+#feedback-3{
+    justify-content: flex-end;
+    background: #000;
+
+}
+button{
+    width: 125px;
+    height: 35px;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: 'Verdana';
+    font-size: 17px;
+    justify-content: center;
+
+
+}
+
+button:hover{
+    opacity: 0.9;
+    cursor: pointer;
+    background: rgb(0, 207, 104);
+
+}
